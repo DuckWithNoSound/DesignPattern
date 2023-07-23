@@ -1,7 +1,17 @@
 # Design Pattern
 
+## Uses
+- Build: Java 17 by [Amazon Corretto](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
+- Quality Scan: [SonarCloud](https://sonarcloud.io/)
+
+## Doc (Vietnamese)
+- [Design Pattern Wiki](https://github.com/DuckWithNoSound/DesignPattern/wiki)
+
+## Reference Source
+- [Refactoring.guru](https://refactoring.guru/design-patterns/)
+
 ## Creational
-### I. Singleton Design Pattern
+### I. [Singleton Design Pattern](https://github.com/DuckWithNoSound/DesignPattern/wiki/Doc:-Singleton-Design-Pattern)
 1. ***Singleton Design Pattern được sử dụng khi bạn muốn đảm bảo rằng một lớp chỉ có duy nhất một thể hiện và cung cấp một cách để truy cập đến thể hiện này từ bất kỳ đâu trong ứng dụng.*** Các trường hợp thường gặp khi cần sử dụng Singleton Design Pattern bao gồm:
 - **Truy cập chung đến một tài nguyên chia sẻ**: Khi bạn muốn chia sẻ một tài nguyên duy nhất trong toàn bộ ứng dụng, bạn có thể sử dụng Singleton để đảm bảo rằng chỉ có một thể hiện của lớp quản lý tài nguyên đó.
 - **Truy cập đến cấu hình**: Khi bạn muốn lưu trữ các cấu hình ứng dụng và truy cập chúng từ bất kỳ đâu trong ứng dụng, Singleton Design Pattern có thể hữu ích để lưu trữ và quản lý cấu hình này.
@@ -47,5 +57,4 @@
 ### IX. Mediator Design Pattern
 ### X. Chain Of Responsibility Design Pattern
 
-## Reference Source
-1. [Refactoring.guru](https://refactoring.guru/design-patterns/)
+
