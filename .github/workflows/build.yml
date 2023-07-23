@@ -20,6 +20,9 @@ jobs:
           java-version: '17'
           distribution: 'corretto'
 
+      - name: Compile Java code
+          run: javac -d target src/*.java
+
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
