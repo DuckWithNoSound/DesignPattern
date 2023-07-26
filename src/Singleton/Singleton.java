@@ -20,8 +20,8 @@ public class Singleton {
         return singleton;
     }
 
-    public void doStaff () {
-        System.out.println(singleton + ": Do staff.");
+    public String doStaff () {
+        return ": Do staff.";
     }
 
 }
