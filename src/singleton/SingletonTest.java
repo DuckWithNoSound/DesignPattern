@@ -16,12 +16,14 @@ public class SingletonTest {
         // Create instance 1
         Singleton singleton1 = Singleton.getInstance();
         // Do staff by instance 1
-        logger.info(singleton1 + singleton1.doStaff());
+        String instance1DoStaff = singleton1.toString().concat(singleton1.doStaff());
+        logger.info(instance1DoStaff);
 
         // Create instance 2
         Singleton singleton2 = Singleton.getInstance();
+        String instance2DoStaff = singleton2.toString().concat(singleton2.doStaff());
         // Do staff by instance 2
-        logger.info(singleton2 + singleton2.doStaff());
+        logger.info(instance2DoStaff);
 
         // The output is only one instance do staff 2 times
     }
