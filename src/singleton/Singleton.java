@@ -13,7 +13,7 @@ public class Singleton {
      * The instance of class is initialized only when it's requested for the first time.
      * @return an instance of Singleton class
      */
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         if(singleton == null) {
             singleton = new Singleton();
         }
