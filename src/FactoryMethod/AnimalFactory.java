@@ -4,6 +4,8 @@ import java.util.Random;
 
 public class AnimalFactory implements IAnimalFactory{
 
+    private Random random = new Random();
+
     private int animalSeq = 0;
 
     @Override
@@ -40,16 +42,15 @@ public class AnimalFactory implements IAnimalFactory{
     @Override
     public IAnimal createAnimalByRandom() {
 
-        Random random = new Random();
-        int animalNumb = random.nextInt(3);
+        int randomAnimalIndex = this.random.nextInt(3);
 
-        if(animalNumb == 0) {
+        if(randomAnimalIndex == 0) {
             this.animalSeq++;
             return new Dog();
-        } else if (animalNumb == 1) {
+        } else if (randomAnimalIndex == 1) {
             this.animalSeq++;
             return new Cat();
-        } else if (animalNumb == 2) {
+        } else if (randomAnimalIndex == 2) {
             this.animalSeq = 0;
             return new Duck();
         } else {
