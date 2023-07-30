@@ -1,4 +1,4 @@
-package FactoryMethod;
+package factorymethod;
 
 public enum AnimalType {
     DOG,

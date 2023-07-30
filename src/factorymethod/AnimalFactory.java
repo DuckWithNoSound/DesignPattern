@@ -1,4 +1,4 @@
-package FactoryMethod;
+package factorymethod;
 
 import java.security.SecureRandom;
 

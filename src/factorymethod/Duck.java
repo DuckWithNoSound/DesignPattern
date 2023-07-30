@@ -1,4 +1,4 @@
-package FactoryMethod;
+package factorymethod;
 
 public class Duck implements IAnimal{
     @Override
