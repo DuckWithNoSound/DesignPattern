@@ -1,10 +1,10 @@
 package FactoryMethod;
 
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class AnimalFactory implements IAnimalFactory{
 
-    private Random random = new Random();
+    private final SecureRandom random = new SecureRandom();
 
     private int animalSeq = 0;
 
