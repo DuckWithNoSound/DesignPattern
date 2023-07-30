@@ -1,4 +1,4 @@
-package Builder;
+package builder;
 
 import java.util.logging.Logger;
 
@@ -6,7 +6,7 @@ public class BuilderTest {
 
     private static final Logger logger = Logger.getLogger(BuilderTest.class.getName());
 
-    private BuilderTest(){};
+    private BuilderTest(){}
 
     /**
      * This function used to test Builder Design Pattern.
