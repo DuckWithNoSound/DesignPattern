@@ -1,6 +1,10 @@
 package Builder;
 
+import java.util.logging.Logger;
+
 public class BuilderTest {
+
+    private static final Logger logger = Logger.getLogger(BuilderTest.class.getName());
 
     private BuilderTest(){};
 
@@ -15,6 +19,6 @@ public class BuilderTest {
                 .setEngine(new Engine("Porsche Engine"))
                 .build();
 
-        System.out.println(car);
+        logger.info(car.toString());
     }
 }
